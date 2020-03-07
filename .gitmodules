@@ -1,0 +1,16 @@
+[submodule "llvm-project"]
+	path = llvm-project
+	url = https://github.com/Quincunx271/OptSched_LLVM_Patched.git
+[submodule "flang-llvm"]
+	path = flang-llvm
+	url = https://github.com/Quincunx271/OptSched_Flang_Patched.git
+[submodule "flang-driver"]
+	path = flang-driver
+	url = https://github.com/flang-compiler/flang-driver.git
+	branch = release_60
+[submodule "openmp"]
+	path = openmp
+	url = https://github.com/llvm-mirror/openmp.git
+[submodule "flang"]
+	path = flang
+	url = https://github.com/flang-compiler/flang.git
