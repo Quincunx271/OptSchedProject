@@ -30,4 +30,8 @@ That command can also fix cloning without the `--recursive` flag.
 
 # Building
 
-TODO
+```
+$ mkdir build && cd build
+$ cmake -GNinja -DCMAKE_BUILD_TYPE=Debug -DLLVM_PARALLEL_LINK_JOBS=1 -DOPTSCHEDPRJ_FLANG_INSTALL_PREFIX=$PWD/flang-install ..
+$ ninja
+```
