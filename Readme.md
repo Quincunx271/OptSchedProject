@@ -32,6 +32,11 @@ That command can also fix cloning without the `--recursive` flag.
 
 ```
 $ mkdir build && cd build
-$ cmake -GNinja -DCMAKE_BUILD_TYPE=Debug -DLLVM_PARALLEL_LINK_JOBS=1 -DOPTSCHEDPRJ_FLANG_INSTALL_PREFIX=$PWD/flang-install ..
+$ cmake -GNinja -DCMAKE_BUILD_TYPE=Debug -DLLVM_PARALLEL_LINK_JOBS=1 -DOPTSCHEDPRJ_FLANG_INSTALL_PREFIX=$PWD/flang-install -DOPTSCHEDPRJ_FLANG_COMPILER_CMAKE_GENERATOR='Unix Makefiles' ..
 $ ninja
 ```
+
+A couple things of note in the cmake configure step:
+
+ - Fortran requires the Makefile generator and not the Ninja generator, as specified above.
+ - Consider adding `-DCMAKE_CXX_COMPILER_LAUNCHER=ccache` to greatly speed up repeated compile times.
