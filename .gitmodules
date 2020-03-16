@@ -1,9 +1,11 @@
 [submodule "llvm-project"]
 	path = llvm-project
-	url = https://github.com/Quincunx271/OptSched_LLVM_Patched.git
+	url = https://github.com/CSUS-LLVM/llvm-project.git
+	branch = optsched
 [submodule "flang-llvm"]
 	path = flang-llvm
-	url = https://github.com/Quincunx271/OptSched_Flang_Patched.git
+	url = https://github.com/CSUS-LLVM/llvm.git
+	branch = optsched
 [submodule "flang-driver"]
 	path = flang-driver
 	url = https://github.com/flang-compiler/flang-driver.git
